@@ -1,3 +1,4 @@
+lose : 17
 lose : 40
 lose : 10
 lose : 1
@@ -22,6 +23,7 @@ lose : 1
 lose : 1
 lose : 2
 lose : 2
+
 
 
 

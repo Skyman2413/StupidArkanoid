@@ -22,25 +22,9 @@ namespace Kursach
 
         private List<Brick> _bricks;
         private Ball _ball;
-        private Stand _stand;
 
-        public List<Brick> Bricks
-        {
-            get => _bricks;
-            set => _bricks = value;
-        }
 
-        public Ball Ball
-        {
-            get => _ball;
-            set => _ball = value;
-        }
-
-        public Stand Stand
-        {
-            get => _stand;
-            set => _stand = value;
-        }
+        public Stand Stand { get; set; }
 
         public bool IsGameOver { get; internal set; }
 
@@ -54,7 +38,7 @@ namespace Kursach
             _height = 720;
             _bricks = CreateBricks();
             _ball = new Ball(_width/2, 500, 5, new Random().Next(180));
-            _stand = new Stand(_width/2, 575);
+            Stand = new Stand(_width/2, 575);
             IsGameOver = false;
             IsWin = false;
         }
@@ -107,7 +91,7 @@ namespace Kursach
                  brick.Draw(canvas);
             }
             _ball.Draw(canvas);
-            _stand.Draw(canvas);
+            Stand.Draw(canvas);
         }
         private void CheckBricksBump()
         {
@@ -126,7 +110,7 @@ namespace Kursach
 
         private void CheckStandDump()
         {
-            if (_ball.IsIntersec(_stand))
+            if (_ball.IsIntersec(Stand))
             {
                 _ball.Dy *= -1;
                 
@@ -136,7 +120,7 @@ namespace Kursach
         private void Move()
         {
             _ball.Move();
-            _stand.Move();
+            Stand.Move();
         }
 
         private List<Brick> CreateBricks()
