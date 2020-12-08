@@ -1,0 +1,14 @@
+C:\Users\stepan\RiderProjects\Kursach\Kursach\bin\Debug\Kursach.exe.config
+C:\Users\stepan\RiderProjects\Kursach\Kursach\bin\Debug\Kursach.exe
+C:\Users\stepan\RiderProjects\Kursach\Kursach\bin\Debug\Kursach.pdb
+C:\Users\stepan\RiderProjects\Kursach\Kursach\obj\Debug\Kursach.csprojAssemblyReference.cache
+C:\Users\stepan\RiderProjects\Kursach\Kursach\obj\Debug\Kursach.Properties.Resources.resources
+C:\Users\stepan\RiderProjects\Kursach\Kursach\obj\Debug\Kursach.csproj.GenerateResource.cache
+C:\Users\stepan\RiderProjects\Kursach\Kursach\obj\Debug\Kursach.csproj.CoreCompileInputs.cache
+C:\Users\stepan\RiderProjects\Kursach\Kursach\obj\Debug\Kursach.exe
+C:\Users\stepan\RiderProjects\Kursach\Kursach\obj\Debug\Kursach.pdb
+C:\Users\stepan\RiderProjects\Kursach\Kursach\obj\Debug\Kursach.Form1.resources
+C:\Users\stepan\RiderProjects\Kursach\Kursach\obj\Debug\Kursach.Help.resources
+C:\Users\stepan\RiderProjects\Kursach\Kursach\obj\Debug\Kursach.LastGames.resources
+C:\Users\stepan\RiderProjects\Kursach\Kursach\obj\Debug\Kursach.MainGame.resources
+C:\Users\stepan\RiderProjects\Kursach\Kursach\obj\Debug\Kursach.ResultOfGame.resources
