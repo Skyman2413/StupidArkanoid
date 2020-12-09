@@ -45,7 +45,7 @@ namespace Kursach
             if (y < miny) y = miny;
         }
 
-        public virtual bool IsIntersec(BaseObject o)
+        public bool IsIntersec(BaseObject o)
         {
             var dx = Math.Abs(x - o.x);
             var dy = Math.Abs(y - o.y);
