@@ -1,11 +1,11 @@
 ﻿using System.Drawing;
-using System.Windows.Forms;
 
 namespace Kursach
 {
     public class Canvas
     {
         public Graphics g;
+
         public Canvas(Graphics g)
         {
             this.g = g;
@@ -15,6 +15,5 @@ namespace Kursach
         {
             g.Clear(Color.White);
         }
-        
     }
 }

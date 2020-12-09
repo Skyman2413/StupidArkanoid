@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 
@@ -17,12 +15,8 @@ namespace Kursach
         private void ReadFile()
         {
             var reader = new StreamReader(@"../../1.txt");
-            for (int i = 0; i < 5 && !reader.EndOfStream; i++)
-            {
-                label1.Text += reader.ReadLine() + "\n";
-            }
+            for (var i = 0; i < 5 && !reader.EndOfStream; i++) label1.Text += reader.ReadLine() + "\n";
             reader.Close();
-            
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using System.Windows.Forms;
 
 namespace Kursach
 {
@@ -9,12 +8,12 @@ namespace Kursach
         private double directionAngle;
 
         private bool isFrozen;
-        
+
         public Ball(float x, float y, double speed, double directionAngle) : base(x, y, 3)
         {
-            this.Speed = speed;
+            Speed = speed;
             this.directionAngle = directionAngle;
-            _color  =  Color.Red;
+            _color = Color.Red;
             isFrozen = true;
         }
 
@@ -29,9 +28,9 @@ namespace Kursach
             get => directionAngle;
             internal set
             {
-                this.directionAngle = value;
+                directionAngle = value;
                 Dx = (float) (Math.Cos(directionAngle) * Speed);
-                Dy = (float)(Math.Sin(directionAngle) * Speed);
+                Dy = (float) (Math.Sin(directionAngle) * Speed);
             }
         }
 
@@ -39,15 +38,14 @@ namespace Kursach
         public override void Draw(Canvas canvas)
         {
             var r = new Random();
-            canvas.g.FillEllipse(new SolidBrush(_color), x - radius, y - radius, radius*2, radius*2);
-            
+            canvas.g.FillEllipse(new SolidBrush(_color), x - radius, y - radius, radius * 2, radius * 2);
         }
 
-        
+
         public override void Move()
         {
             if (isFrozen) return;
-            x += Dx; 
+            x += Dx;
             y += Dy;
             CheckRebound(2, 750, 64, 550);
         }
@@ -65,6 +63,7 @@ namespace Kursach
                 x = 2 * maxx - x;
                 Dx *= -1;
             }
+
             if (y < miny)
             {
                 y = 2 * miny - y;
@@ -82,7 +81,6 @@ namespace Kursach
         {
             DirectionAngle = directionAngle;
             isFrozen = false;
-
         }
     }
 }

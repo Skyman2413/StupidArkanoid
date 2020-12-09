@@ -5,9 +5,9 @@ namespace Kursach
 {
     public abstract class BaseObject
     {
-        protected float x, y;
-        protected float radius;
         protected Color _color;
+        protected float radius;
+        protected float x, y;
 
         protected BaseObject(float x, float y, float radius)
         {
@@ -51,6 +51,5 @@ namespace Kursach
             var dy = Math.Abs(y - o.y);
             return dy < o.radius / 4 && dx < o.radius / 2;
         }
-        
     }
 }

@@ -7,7 +7,6 @@ namespace Kursach
     {
         public ResultOfGame(bool isWin, int score)
         {
-            
             InitializeComponent();
             label1.Text = isWin ? "WIN!" : "LOSE!";
             label2.Text += score;
