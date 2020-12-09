@@ -16,18 +16,17 @@ namespace Kursach
         private readonly List<Brick> _bricks;
         private readonly float _height;
         private readonly Label _label;
-        private readonly float _width;
-        private readonly Graphics g;
+        private readonly Graphics _g;
 
         public Game(Graphics g, Label label)
         {
             _label = label;
-            this.g = g;
-            _width = 1024;
+            this._g = g;
+            float width = 1024;
             _height = 720;
             _bricks = CreateBricks();
-            _ball = new Ball(_width / 2, 500, 5, new Random().Next(180));
-            Stand = new Stand(_width / 2, 575);
+            _ball = new Ball(width / 2, 500, 5, new Random().Next(180));
+            Stand = new Stand(width / 2, 575);
             IsGameOver = false;
             IsWin = false;
         }
@@ -52,7 +51,7 @@ namespace Kursach
 
         public void Run()
         {
-            var canvas = new Canvas(g);
+            var canvas = new Canvas(_g);
             _ball.Start();
             while (!IsGameOver)
             {
