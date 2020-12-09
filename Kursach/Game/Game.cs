@@ -34,7 +34,7 @@ namespace Kursach
         public int Score { get; private set; }
 
 
-        public Stand Stand { get; set; }
+        public Stand Stand { get; }
 
         public bool IsGameOver { get; internal set; }
 
